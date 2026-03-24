@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Papitas</title>
+</head>
+<body>
+    <!-- <h1>Esto se está viendo</h1> -->
+    <div id="app">
+        <h1>Puntaje DEV</h1>
+        <p>Descrubre en qué nivel estás </p>
+        <div id="formulario">
+            <label>¿Cuál es tu nombre?</label>
+            <input type="text" id="nombreUsuario" placeholder="Tu nombre aquí">
+            <span id="errorNombre" style="display:none; color:red;">Ingresa tu nombre</span>
+            <p>¿Qué tecnologías manejas</p>
+            <input type="checkbox" id="html" value="10"> HTML/CSS <br>
+            <input type="checkbox" id="JS" value="20">  JavaScript <br>
+            <input type="checkbox" id="SQL" value="30"> SQL <br>
+            <input type="checkbox" id="Java" value="30"> JAVA <br>
+            <input type="checkbox" id="GIT" value="10"> Git <br>
+
+            <br>
+            <button id="btnCalcular">Calcular</button>
+            
+        </div>
+
+        <div id="resultado" style="display: none">
+            <h2 id="mensajePrincipal"></h2>
+            <p id="subMensaje"></p>
+            <p id="puntaje"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
